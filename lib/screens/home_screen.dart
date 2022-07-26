@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,8 +60,6 @@ class MyHomePage extends StatelessWidget {
 }
 
 class Count extends StatelessWidget {
-  Count({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Text('${context.watch<Counter>().count}',
