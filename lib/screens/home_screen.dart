@@ -16,7 +16,7 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             Text(
                 'You have pushed the button this many times: ${context.watch<Counter>().count}'),
-            Count(),
+            CountXx(),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/second');
@@ -59,10 +59,10 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-class Count extends StatelessWidget {
+class CountXx extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text('${context.watch<Counter>().count}',
-        key: Key('counterState'), style: Theme.of(context).textTheme.headline4);
+        style: Theme.of(context).textTheme.headline4);
   }
 }
